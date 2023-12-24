@@ -25,9 +25,9 @@ function Happy() {
     tease.style.display = "none"
     nobutton.style.display = "none"
     Yescounter = Yescounter + 1;
-    if (Yescounter == 2) {
-        Yesmail();
-    }
+    // if (Yescounter == 2) {
+        // Yesmail();
+    // }
     if (Yescounter == 3) {
         yesbutton.style.display = "none";
         alert("Seems So Excited...")
