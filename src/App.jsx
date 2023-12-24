@@ -3,7 +3,7 @@ import asking from "./Assets/holding.webp"
 import dancing from "./Assets/dancing2.gif"
 import angry from "./Assets/angry.gif"
 import tease from "./Assets/tease.gif"
-
+import Yesmail from './Sendmail/Yesmail'
 
 let counter = 1;
 let Yescounter = 1;
@@ -25,6 +25,9 @@ function Happy() {
     tease.style.display = "none"
     nobutton.style.display = "none"
     Yescounter = Yescounter + 1;
+    if (Yescounter == 2) {
+        Yesmail();
+    }
     if (Yescounter == 3) {
         yesbutton.style.display = "none";
         alert("Seems So Excited...")
@@ -41,7 +44,7 @@ function Angry() {
     angry.style.display = "block"
     secondnobutton.style.borderColor = "red";
     secondnobutton.style.color = "red";
-    if (counter == 4) {
+    if (counter == 3) {
         angry.style.display = "none"
         secondnobutton.style.display = "none"
         tease.style.display = "block"
