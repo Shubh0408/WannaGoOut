@@ -25,6 +25,7 @@ function Happy(to_name) {
     tease.style.display = "none"
     nobutton.style.display = "none"
     Yescounter = Yescounter + 1;
+
     if (Yescounter == 2) {
         Yesmail(to_name);
         console.log(to_name);
