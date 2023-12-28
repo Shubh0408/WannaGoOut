@@ -1,9 +1,10 @@
 import React from 'react'
 import emailjs from 'emailjs-com';
 
-const Yesmail = () => {
-    console.log("in");
+const Yesmail = (to_name) => {
+
     emailjs.send('service_0exlvz9', 'template_38mzsor', {
+        to_name: to_name,
     }, 'FuLBxTJ-BjzvuPotA')
     .then((response) => {
         console.log('Email sent:', response);
@@ -11,8 +12,6 @@ const Yesmail = () => {
     .catch((error) => {
         console.error('Error sending email:', error);
     });
-    
-    console.log("out");
 }
 
 export default Yesmail
